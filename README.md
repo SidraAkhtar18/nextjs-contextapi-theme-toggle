@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🌙☀️ Next.js Context API Theme Toggle
 
-## Getting Started
+This project is part of my **#100DaysOfCode MERN Stack Journey** (Day 29).  
+It demonstrates how to implement a **Dark/Light Mode toggle** in a **Next.js App Router** project using the **React Context API** for global state management.  
 
-First, run the development server:
+---
 
+## 🚀 Features
+- 🌑 **Dark/Light mode toggle** with Context API  
+- 🔄 **Global state management** without prop drilling  
+- 💾 **Persistent theme** using `localStorage`  
+- 🎨 **TailwindCSS dark mode classes** for seamless UI styling  
+- 🖱️ Toggle button with custom Sun 🌞 / Moon 🌙 icons in the Header  
+
+---
+
+## 🛠️ Tech Stack
+- [Next.js 13+ (App Router)](https://nextjs.org/)  
+- [React Context API](https://react.dev/reference/react/useContext)  
+- [TailwindCSS](https://tailwindcss.com/)  
+
+---
+
+## 📂 Project Structure
+nextjs-contextapi-theme-toggle/
+├── app/
+│ ├── layout.js # Root layout wrapped in ThemeProvider
+│ ├── page.js # Example Home page
+├── components/
+│ ├── Header.js # Navbar with theme toggle button
+│ ├── SunIcon.js # Sun icon component
+│ ├── MoonIcon.js # Moon icon component
+├── context/
+│ ├── ThemeContext.js # ThemeContext + Provider
+├── styles/
+│ ├── globals.css # TailwindCSS setup
+
+yaml
+Copy
+Edit
+
+---
+
+## ▶️ Getting Started
+
+### 1️⃣ Clone the repository
 ```bash
+git clone https://github.com/YOUR-USERNAME/nextjs-contextapi-theme-toggle.git
+cd nextjs-contextapi-theme-toggle
+2️⃣ Install dependencies
+bash
+Copy
+Edit
+npm install
+3️⃣ Run the development server
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Now open http://localhost:3000 🚀
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📸 Preview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+💡 Learnings
+How Context API solves the prop drilling problem
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+How to integrate dark mode with TailwindCSS
 
-## Learn More
+How to persist state in localStorage for better UX
 
-To learn more about Next.js, take a look at the following resources:
+👩‍💻 Author
+Sidra Akhtar
+🔗 LinkedIn • Twitter
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📜 License
+This project is licensed under the MIT License.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+yaml
+Copy
+Edit
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⚡ This README is **structured, professional, and recruiter-friendly**.  
+Do you want me to also generate a **sample `package.json` and Next.js setup files** for this repo so you can dire
